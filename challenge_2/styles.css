@@ -1,0 +1,40 @@
+h2, p {
+    margin: 20px;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #20A39E; 
+    margin-left: 50px;
+}
+
+main {
+    background-color: #F7F4F3;
+    padding: 5px;
+    margin: 30px;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    color: #FF785A; 
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px;
+}
+
+footer {
+    text-align: center;
+}

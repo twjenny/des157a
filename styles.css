@@ -1,0 +1,20 @@
+main {
+    min-width: 800px;
+    max-width: 1200px;
+    display: flex;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.firstBox {
+    display: flex;
+    flex-direction: column;
+}
+
+#banner {
+    max-width: 1100px;
+    max-height: 250px;
+    display:flex;
+}
