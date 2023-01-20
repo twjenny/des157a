@@ -1,20 +1,63 @@
-main {
-    min-width: 800px;
-    max-width: 1200px;
-    display: flex;
+h1, header h2{
+    text-align: center;
+}
+
+main h2 {
+    text-align: left;
+}
+
+body {
+    text-align:center;
+    font-family: 'Gaegu', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 ul li {
     list-style-type: none;
-}
+    text-align:left;
+ }
+ 
 
-.firstBox {
-    display: flex;
-    flex-direction: column;
-}
 
-#banner {
-    max-width: 1100px;
-    max-height: 250px;
-    display:flex;
-}
+@media only screen and (max-width: 799px) {
+    header {
+        text-align: center;
+        margin: 0 1em 0 1em;
+    }
+
+    body {
+      background-color: lightblue;
+    }
+
+    main h2 {
+        text-align: center;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    ul li {
+        text-align:center;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer p {
+        padding: 1em;
+        margin: 0;
+    }
+
+    #firstBox, #secondBox, #thirdBox {
+        flex: 1;
+        flex-direction:column;
+        padding-bottom: 2em;
+        border-width: 1em;
+        border-color: white;
+    }
+
+  }
