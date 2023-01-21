@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 1</title>
+</head>
+<body>
+    <h1>Experiment 1</h1>
+    <h2>To open the console: 1) right click, 2) go to "Inspect", and 3) click on "Console"</h2>
+
+    <script>
+        /*This program prints from 1 to 100, but print "Fizz" when the number is divisible by 3 and "Buzz" if divisible by 5 and not by 3.*/
+        for (i=1; i<101; i++) {
+            if (i%3 == 0) {
+                console.log ("Fizz");
+            }
+            else if (i%5 == 0 && i%3 != 0) {
+                console.log ("Buzz");
+            }
+            else {
+                console.log (i);
+            }
+        }
+    </script>
+</body>
+</html>
