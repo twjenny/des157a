@@ -13,10 +13,6 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-ul li {
-    list-style-type: none;
-    text-align:left;
- }
 
 @media only screen and (max-width: 799px) {
     header {
@@ -25,6 +21,7 @@ ul li {
 
     body {
       background-color: lightblue;
+      flex-direction: column;
     }
 
     main h2 {
@@ -42,7 +39,27 @@ ul li {
 
     ul li {
         text-align:center;
-        padding: 1% 0 1% 0;
+        padding: 2% 0 2% 0;
+        list-style: none;
+    }
+
+    ul li a {
+        background-color: white;
+        padding: 5px;
+        border-radius: 5px;
+        text-decoration: none;
+        color:black;
+    }
+
+    @keyframes bounce {
+        0% {transform: rotateY(0deg);}
+        15% {transform: rotate(-10deg);}
+        20% {transform: rotate(10deg);}
+    }
+
+    /* hover doesn't work on ul li a, but it does work on ul li */
+    ul li a:hover {
+        animation: bounce 1s;
     }
 
     footer {
@@ -55,16 +72,24 @@ ul li {
         margin: 0;
     }
 
+    footer a {
+        color:black;
+        text-decoration:none;
+    }
+
     #firstBox, #secondBox, #thirdBox {
         flex: 1;
         flex-direction:column;
         padding-bottom: 2em;
         margin: 5% 15% 0 15%;
-        border-style: solid;
-        border-color: black;
-        border-width: 1px;
+        border-style:dotted;
+        border-color: white;
+        border-width: 5px;
     } 
-    
+
+    /* There are two issues and 
+    1) the dots are supposed to be overflow-hidden, but the cut off is not exactly where I want it to be
+    2) I want to keep the dots in place and resize when the screen size changes */
     #banner{
         position: relative;
         width: 80%;
@@ -89,23 +114,32 @@ ul li {
     }
 
     #dot1 {
-        top: 70px;
-        left: 60px;
+        top: 60px;
+        left: 70px;
         height: auto;
     }
 
     #dot1 img {
-        width: 50%;
+        width: 90%;
     }
 
+    #dot1 img:hover {
+        transform: scale(1.5) rotate(250deg);
+        transition: 1s;
+    }
 
     #dot2 {
         top: 10px;
-        left: 150px;
+        left: 160px;
     }
 
     #dot2 img {
-        width: 50%;
+        width: 70%;
+    }
+
+    #dot2 img:hover {
+        transform: scale(1.5) rotate(-180deg);
+        transition: 1s;
     }
 
     #dot3 {
@@ -117,31 +151,51 @@ ul li {
         width: 70%;
     }
 
+    #dot3 img:hover {
+        transform: scale(1.2) rotate(290deg);
+        transition: 1s;
+    }
+
     #dot4 {
         top: 30px;
-        left: 350px;
+        left: 330px;
     }
 
     #dot4 img {
-        width: 60%;
+        width: 85%;
+    }
+
+    #dot4 img:hover {
+        transform: scale(1.5) rotate(290deg);
+        transition: 1s;
     }
 
     #dot5 {
-        top: 70px;
+        top: 60px;
         left: 350px;
     }
 
     #dot5 img {
-        width: 60%;
+        width: 40%;
+    }
+
+    #dot5 img:hover {
+        transform: scale(1.8) rotate(-200deg);
+        transition: 1s;
     }
 
     #dot6 {
-        top: -60px;
-        left: 430px;
+        top: -80px;
+        left: 400px;
     }
 
     #dot6 img {
-        width: 80%;
+        width: 90%;
+    }
+
+    #dot6 img:hover {
+        transform: scale(1.5) rotate(290deg);
+        transition: 1s;
     }
 
   }
