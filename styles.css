@@ -3,7 +3,16 @@
 }
 
 html {
-    background-color: lightblue;
+    background: linear-gradient(145deg,#ADE4FF, #A6CCF5, #daaef0, #a696f8);
+    animation: colorChange 10s;
+    background-size: 200% 200%;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorChange {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
 }
 
 h1, header h2{
