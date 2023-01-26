@@ -115,11 +115,11 @@ footer p, footer p a {
 
 #dot1 img {
     width: 90%;
+    transition: 1s;
 }
 
 #dot1 img:hover {
     transform: scale(1.3) rotate(250deg);
-    transition: 1s;
 }
 
 #dot2 {
@@ -131,11 +131,11 @@ footer p, footer p a {
 
 #dot2 img {
     width: 90%;
+    transition: 1s;
 }
 
 #dot2 img:hover {
     transform: scale(1.3) rotate(-180deg);
-    transition: 1s;
 }
 
 #dot3 {
@@ -147,11 +147,11 @@ footer p, footer p a {
 
 #dot3 img{
     width: 80%;
+    transition: 1s;
 }
 
 #dot3 img:hover {
     transform: scale(1.2) rotate(290deg);
-    transition: 1s;
 }
 
 #dot4 {
@@ -163,11 +163,11 @@ footer p, footer p a {
 
 #dot4 img {
     width: 90%;
+    transition: 1s;
 }
 
 #dot4 img:hover {
     transform: scale(1.2) rotate(290deg);
-    transition: 1s;
 }
 
 #dot5 {
@@ -179,11 +179,11 @@ footer p, footer p a {
 
 #dot5 img {
     width: 70%;
+    transition: 1s;
 }
 
 #dot5 img:hover {
     transform: scale(1.3) rotate(-200deg);
-    transition: 1s;
 }
 
 #dot6 {
@@ -195,11 +195,11 @@ footer p, footer p a {
 
 #dot6 img {
     width: 90%;
+    transition: 1s;
 }
 
 #dot6 img:hover {
     transform: scale(1.2) rotate(290deg);
-    transition: 1s;
 }
 
 @media only screen and (max-width: 799px) {
