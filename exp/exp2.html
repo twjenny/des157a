@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2</title>
+</head>
+<body>
+    <h2>Experiment 2</h2>
+    <script>
+        var color = prompt('Choose your favorite color from this list: red, blue, yellow, and green!');
+
+        var backGround = document.querySelector('body');
+
+        if( color === 'red'){
+            backGround.style.backgroundColor = 'red';
+        }
+
+        else if( color === 'blue'){
+            backGround.style.backgroundColor = 'blue';
+        }
+
+        else if( color === 'yellow'){
+            backGround.style.backgroundColor = 'yellow';
+        }
+
+        else if( color === 'green'){
+            backGround.style.backgroundColor = 'green';
+        }
+
+        else{
+            alert('Please select a color from one of the choices');
+        }
+
+    </script>
+    
+</body>
+</html>
