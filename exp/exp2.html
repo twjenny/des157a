@@ -11,6 +11,7 @@
     <script>
         /* prompt provides a list of colors and once the user selects one of the colors, the background color changes into that color*/
         var color = prompt('Choose your favorite color from the list: red, blue, yellow, and green!');
+        color = color.toLowerCase;
 
         function colorGen () {
             var backGround = document.querySelector('body');
