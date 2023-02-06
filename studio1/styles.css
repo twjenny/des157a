@@ -72,16 +72,17 @@ body {
     line-height: 50px;
 }
 
-/* I NEED HELP */
-/* I tried to make only border bottom to show, but the live screen does not update even after doing border:none and border-bottom: 2px solid white */
-input[type=text] {
-    width: 50%;
+input[type="text"] {
+    margin: 0.5em;
     border: none;
-    border-bottom: 2px solid white;
-}
+    border-bottom: 1px solid white;
+    width: 40%;
+    background-color: transparent;
+    }
+
+/* just a note to myself = I want the cursor to change shape when it hovers over each line of the form, and I want the insertion bar to be thick&white once it is clicked */
 
 /* Output page where user receives the message */
-
 #output {
     display: none;
 }
