@@ -8,7 +8,7 @@ body {
 /* Introduction page with title, image, and a button */
 
 #intro {
-    display: none;
+    display: block;
 }
 
 #intro header {
@@ -27,7 +27,7 @@ body {
 }
 
 #intro p {
-    margin: 16.5em 12em 0 12em;
+    margin: 16.5em 14em 0 14em;
     padding: 0.5em;
     text-align: center;
     color: white;
@@ -46,7 +46,7 @@ body {
 /* Input page with different input sections */
 
 #input {
-    display:block;
+    display:none;
 }
 
 #input header {
