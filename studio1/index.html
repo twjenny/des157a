@@ -15,32 +15,38 @@
 
 </head>
 <body>
-    <section id="intro">
+    <article id="intro">
         <header>THE ESCAPE</header>
-        <main>
-            <img src="images/escape.svg" alt="Escape Image" width="300">
-            <p>|  Escape Now  |</p>
-        </main>
-    </section>  
+        <img src="images/escape.svg" alt="Escape Image" width="300">
+        <p>|  Escape Now  |</p>
+    </article>  
 
-    <section id="input">
+    <article id="input">
         <header>PLAN YOUR ESCAPE</header>
+        <img src="images/chalk.png" alt="chalk mark" width="150">
         <main>
-            <img src="images/chalk.svg" alt="chalk mark" width="150">
+            <form>
+                <label for="name"> Your name: </label><input type="text" id="name" required> <br>
+                <label for="place"> Place you like: </label><input type="text" id="place" required><br>
+                <label for="action"> Activity you hate: </label><input type="text" id="action" required><br>
+                <label for="object"> Object you own: </label><input type="text" id="object" required><br>
+                <label for="plural"> Name of any place: </label><input type="text" id="plural" required><br>
+                <label for="living"> Any living thing: </label><input type="text" id="living" required><br><br>
+                <input type="submit">
+            </form>
         </main>
-    </section>
+    </article>
 
-    <section id="output">
-        <main>
-            <img src="images/paper.svg" alt="Paper" width="900">
-            <p>
-                Hello (your name), this is a note to help you escape this (place). Before I help you, you have to (verb) for 400 hours or else this note will be useless. Once you have done that, you will walk out this door, and you will see a/an (adj)(noun). Make sure you give them the (object) that you have so they don&apos;t chase after you. You don&apos;t think you have it? Try checking your pocket:) Once you pass that area, you will see glowing (plural noun) (present tense verb). Even if it&apos;s bright, make sure you don&apos;t (verb) or else you might get noticed by the cameras. After that, you will arrive at (place) and you should be safe from there. <br>Good luck!
-                <br>
-                <br>
-                From (noun - person)
-            </p>
-        </main>
-    </section>
+    <article id="output">
+        <img src="images/paper.svg" alt="Paper" width="900">
+        <p>
+            Hello (your name), this is a note to help you escape this (place). Before I help you, you have to (verb) for 400 hours or else this note will be useless. Once you have done that, you will walk out this door, and you will see a jumping (noun). Once you pass that area, you will see glowing (plural noun) and you should smile at them to look friendly. If you don't smile, they will run after you. After that, you will arrive at the end and you will know that you have reached the end when you see me. <br>Good luck!
+            <br>
+            <br>
+            From (noun - person)
+        </p>
+        <p class="button">|  Generate Another Plan  |</p>
+    </article>
     
 </body>
 </html>

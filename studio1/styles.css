@@ -27,11 +27,11 @@ body {
 }
 
 #intro p {
-    margin: 13em 12em 0 12em;
+    margin: 16.5em 12em 0 12em;
     padding: 0.5em;
     text-align: center;
     color: white;
-    font-size: 35px;
+    font-size: 28px;
 }
 
 #intro p:hover {
@@ -46,7 +46,7 @@ body {
 /* Input page with different input sections */
 
 #input {
-    display:none;
+    display:block;
 }
 
 #input header {
@@ -64,14 +64,30 @@ body {
     left: 50px;
 }
 
+#input main {
+    margin: 3em 10em 0  12em;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    line-height: 50px;
+}
+
+/* I NEED HELP */
+/* I tried to make only border bottom to show, but the live screen does not update even after doing border:none and border-bottom: 2px solid white */
+input[type=text] {
+    width: 50%;
+    border: none;
+    border-bottom: 2px solid white;
+}
+
 /* Output page where user receives the message */
 
 #output {
-    display: block;
+    display: none;
 }
 
 #output p {
-    margin: 10em 12em 0  15em;
+    margin: 8em 12em 0  15em;
     color: black;
     font-size: 18px;
     line-height: 30px;
@@ -81,6 +97,23 @@ body {
 #output img {
     position: absolute;
     z-index: -1;
-    top: 100px;
+    top: 70px;
     left: 170px;
+}
+
+#output p.button {
+    margin: 4em 12em 0 12em;
+    padding: 0.5em;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+#output p.button:hover {
+    padding: 0.5em;
+    color: white;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    border-color: white;
 }
