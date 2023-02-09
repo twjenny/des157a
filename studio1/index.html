@@ -8,35 +8,36 @@
     <!-- google fonts go here -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Short+Stack&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Gaegu:wght@300;700" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
     <title>Jennifer's Mad Libs</title>
 
 </head>
 <body>
-    <main>
+    <header>
         <section id="intro" class="show">
             <header>THE ESCAPE</header>
             <img src="images/escape.svg" alt="Escape Image" width="300" height=auto>
             <p id="begin" class="button">|  Escape Now  |</p>
         </section>
-
+    </header>
+    <main>
         <section id="input" class="hide">
             <header>PLAN YOUR ESCAPE</header>
             <img src="images/chalk.png" alt="chalk mark" width="150" height=auto>
             <form id="inputForm">
-                <label for="name"> Your name: </label>
-                <input type="text" id="name" required> <br>
-                <label for="place"> Place you like: </label>
+                <label for="name"> Your name:</label>
+                <input type="text" id="name" required><br>
+                <label for="place"> Place you like:</label>
                 <input type="text" id="place" required><br>
-                <label for="action"> Activity you hate: </label>
+                <label for="action"> Activity you hate (e.g- run, skip, move):</label>
                 <input type="text" id="action" required><br>
-                <label for="object"> Object you own: </label>
+                <label for="object"> Object you own:</label>
                 <input type="text" id="object" required><br>
-                <label for="plural"> Name of any place: </label>
+                <label for="plural"> Name of any place:</label>
                 <input type="text" id="plural" required><br>
-                <label for="living"> Any living thing: </label>
+                <label for="living"> Any living thing:</label>
                 <input type="text" id="living" required><br><br>
                 
                 <input id="submitButton" type="submit">
@@ -45,7 +46,7 @@
 
         <section id="output" class="hide">
             <img src="images/paper.svg" alt="Paper" width="900" height=auto>
-            <article id="madLibs"></article>
+            <article id="madLib"></article>
             <p id="again" class="button">|  Generate Another Plan  |</p>
         </section>
     </main>
