@@ -1,11 +1,12 @@
 h2{
-    margin: 7% 80% 0 -50%;
-    padding: 8%;
+    margin: 7% 80% 0 -40%;
+    padding: 5% 0 5% 10%;
     background-color: rgb(255, 255, 148);
     border-radius: 5px;
     z-index: 1;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 30px;
+    line-height: 35px;
     color:rgb(59, 59, 59);
 }
 
