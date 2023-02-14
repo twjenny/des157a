@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,18 +15,17 @@
     <title>Jennifer's Mad Libs</title>
 
 </head>
+
 <body>
-    <header>
-        <section id="intro" class="show">
-            <header>THE ESCAPE</header>
-            <img src="images/escape.svg" alt="Escape Image" width="300" height=auto>
-            <p id="begin" class="button">|  Escape Now  |</p>
-        </section>
+    <header id="intro">
+        <h1>THE ESCAPE</h1>
+        <img src="images/escape.svg" alt="Escape Image" width="300">
+        <button>| Escape Now |</button>
     </header>
     <main>
         <section id="input" class="hide">
-            <header>PLAN YOUR ESCAPE</header>
-            <img src="images/chalk.png" alt="chalk mark" width="150" height=auto>
+            <h2>PLAN YOUR ESCAPE</h2>
+            <img src="images/chalk.png" alt="chalk mark" width="150">
             <form id="inputForm">
                 <label for="name"> Your name:</label>
                 <input type="text" id="name" required><br>
@@ -35,21 +35,22 @@
                 <input type="text" id="action" required><br>
                 <label for="object"> Object you own:</label>
                 <input type="text" id="object" required><br>
-                <label for="plural"> Name of any place:</label>
+                <label for="plural"> Plural noun:</label>
                 <input type="text" id="plural" required><br>
-                <label for="living"> Any living thing:</label>
-                <input type="text" id="living" required><br><br>
-                
+                <label for="friend"> Your friend:</label>
+                <input type="text" id="friend" required><br><br>
+
                 <input id="submitButton" type="submit">
             </form>
         </section>
 
         <section id="output" class="hide">
-            <img src="images/paper.svg" alt="Paper" width="900" height=auto>
+            <!-- <img src="images/paper.svg" alt="Paper" width="900"> -->
             <article id="madLib"></article>
-            <p id="again" class="button">|  Generate Another Plan  |</p>
+            <button>| Generate Another Plan |</button>
         </section>
     </main>
-    
+
 </body>
+
 </html>

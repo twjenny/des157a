@@ -16,14 +16,14 @@ const madLibs = document.querySelector('#madLib');
         const action = document.querySelector('#action').value;
         const object = document.querySelector('#object').value;
         const plural = document.querySelector('#plural').value;
-        const living = document.querySelector('#living').value;
+        const friend = document.querySelector('#friend').value;
 
         let myText;
-        if(name && place && action && object && plural && living) {
+        if(name && place && action && object && plural && friend) {
             myText = `Hello <b>${name}</b>,<br><br> This is a note to help you escape this miserable <b>${place}</b>! Before I help you, you have to <b>${action}</b> for 400 hours or else this note will be useless. Once you have done that, you will walk out this door and you will see a jumping <b>${object}</b>. Once you pass that thing, you will see glowing <b>${plural}</b> and smile at them to look friendly. If you don't smile, they will run after you. After that, you will see me at the end with a stopwatch. Good luck!
             <br>
             <br>
-            From <b>${living}</b>`;
+            From <b>${friend}</b>`;
 
             // resetting form
             document.querySelector('#name').value='';
@@ -31,7 +31,7 @@ const madLibs = document.querySelector('#madLib');
             document.querySelector('#action').value='';
             document.querySelector('#object').value='';
             document.querySelector('#plural').value='';
-            document.querySelector('#living').value='';
+            document.querySelector('#friend').value='';
         } else {
             myText = 'Please fill out all the blanks!';
         }
@@ -41,13 +41,13 @@ const madLibs = document.querySelector('#madLib');
 
 
 // changing pages on buttons
-    document.querySelector('#begin').addEventListener('click', function(event){
+    document.querySelector('#intro button').addEventListener('click', function(event){
         event.preventDefault();
         document.querySelector('#input').className='show';
         document.querySelector('#intro').className='hide';
     });
 
-    document.querySelector('#again').addEventListener('click', function(event){
+    document.querySelector('#output button').addEventListener('click', function(event){
         event.preventDefault();
         document.querySelector('#intro').className='show';
         document.querySelector('#output').className='hide';
