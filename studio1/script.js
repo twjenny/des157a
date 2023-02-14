@@ -20,7 +20,7 @@ const madLibs = document.querySelector('#madLib');
 
         let myText;
         if(name && place && action && object && plural && friend) {
-            myText = `Hello <b>${name}</b>,<br><br> This is a note to help you escape this miserable <b>${place}</b>! Before I help you, you have to <b>${action}</b> for 400 hours or else this note will be useless. Once you have done that, you will walk out this door and you will see a jumping <b>${object}</b>. Once you pass that thing, you will see glowing <b>${plural}</b> and smile at them to look friendly. If you don't smile, they will run after you. After that, you will see me at the end with a stopwatch. Good luck!
+            myText = `Hello <b>${name}</b>,<br><br> This is a note to help you escape this miserable <b>${place}</b>! Before I help you, you have to <b>${action}</b> for 400 hours or else this note will be useless. Once you have done that, walk out the door and you will see a jumping <b>${object}</b>. Keep walking until you see <b>${plural}</b> and make sure to smile at them to look friendly. If you don't smile, they will run after you. After that, you will see me at the end with a bell. Good luck!
             <br>
             <br>
             From <b>${friend}</b>`;
