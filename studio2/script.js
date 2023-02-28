@@ -1,8 +1,9 @@
-(function () {
+//loads images first before beginning the page
+window.addEventListener ('load', function () {
 	"use strict";
 	console.log("reading js");
 
-//beginning of the letters page
+	//beginning of the letters page
 	//variables defined
 	const posts = document.querySelectorAll("section");
 	let postTops = [];
