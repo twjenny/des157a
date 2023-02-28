@@ -1,0 +1,95 @@
+main {
+	width: 40vw;
+}
+
+section {
+	height: 100vh;
+}
+
+figure {
+	padding: 2%;
+	display: block;
+	width: 50vw;
+	height: 95vh;
+	max-height: 100vh;
+	position: fixed;
+	top: 0;
+	right: 0;
+	text-align: center;
+}
+
+h3, p, li {
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.5em;
+}
+
+h1 {
+    font-family: 'Mali', cursive;
+}
+
+#part1, #part2, #part3, #part4, #part5 {
+    padding: 10% 10% 10% 15%;
+    background-color: beige;
+}
+
+.sect1,
+.sect2,
+.sect3,
+.sect4,
+.sect5 {
+	background-repeat: no-repeat;
+	background-position: center center;
+	animation-duration: 2s;
+}
+
+.sect1 {
+	background-image: url(images/sister.png);
+	background-size: 40vw;
+
+}
+
+.sect2 {
+	background-image: url(images/grandma.png);
+	background-size: 50vw;
+}
+
+.sect3 {
+	background-image: url(images/colorguard.png);
+	background-size: 50vw;
+}
+
+.sect4 {
+	background-image: url(images/bf.png);
+	background-size: 50vw;
+}
+
+.sect5 {
+	background-image: url(images/mom.png);
+	background-size: 40vw;
+}
+
+.in {
+	animation: imageIn 0.5s;
+}
+
+.out {
+	animation: imageOut 0.5s;
+}
+
+@keyframes imageIn {
+	0% {
+		transform: translate(200%);
+	}
+	100% {
+		transform: translate(0);
+	}
+}
+
+@keyframes imageOut {
+	0% {
+		transform: translate(0);
+	}
+	100% {
+		transform: translate(200%);
+	}
+}
