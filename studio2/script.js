@@ -63,4 +63,17 @@
 		});
 	}
 
+	// // changing pages on buttons
+    // document.querySelector('#landing button').addEventListener('click', function(event){
+    //     event.preventDefault();
+    //     document.querySelector('#letters').className='show';
+    //     document.querySelector('#landing').className='hide';
+    // });
+
+	// document.querySelector('#home').addEventListener('click', function(event){
+    //     event.preventDefault();
+    //     document.querySelector('#landing').className='show';
+    //     document.querySelector('#letters').className='hide';
+    // });
+
 })();
