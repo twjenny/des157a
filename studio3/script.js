@@ -15,8 +15,8 @@
 	const actionArea = document.getElementById('actions');
 
 	const gameData = {
-		dice: ['images/1die.png', 'images/2die.png', 'images/3die.png', 
-			   'images/4die.png', 'images/5die.png', 'images/6die.png'],
+		dice: ['images/1card.png', 'images/2card.png', 'images/3card.png', 
+			   'images/4card.png', 'images/5card.png', 'images/6card.png'],
 		players: ['player 1', 'player 2'],
 		score: [0, 0],
 		roll1: 0,
@@ -112,8 +112,8 @@
 	}
 
 	function showCurrentScore() {
-		player1.innerHTML = `<p>${gameData.players[0]} ${gameData.score[0]}</p>`;
-		player2.innerHTML = `<p>${gameData.players[1]} ${gameData.score[1]}</p>`;
+		player1.innerHTML = `<p><br><br>${gameData.players[0]} <br> ${gameData.score[0]}</p>`;
+		player2.innerHTML = `<p><br><br>${gameData.players[1]} <br> ${gameData.score[1]}</p>`;
 	}
 
 	// changing pages on button clicks
