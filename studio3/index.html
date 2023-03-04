@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap" rel="stylesheet">
+    <!-- normalize/css/js -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
+	<script src="script.js" defer></script>
+    <title>Game of PIG</title>
+</head>
+<body>
+    <header id="intro" class="show">
+        <h1>Game of PIG</h1>
+        <br>
+        <p>There are two players. The player whose turn it is rolls the dice. The total of the roll is added to the current player's score, unless either die comes up as a "one". If this happens, this player's turn is over, and it is the other player’s turn. After each roll, the current player can either roll again, (assuming a "one" was not rolled) or if the current player feels that luck is running thin, they can pass to the other player. The first player to get 30 points or higher wins.</p> 
+        <p>Oh, and if you roll two "ones" (snake eyes), your current score gets zeroed out. So don’t do that.</p>
+        <button id="begin">| Begin Now |</button>
+    </header>
+
+    <main id="play" class="hide">
+        <div id="gamecontrol">
+            <button id="startgame">| Randomly Choose a Player to Begin |</button>
+        </div>
+
+        <div id="game"></div>
+        <div id="score">
+            <div id="player1">
+                <!-- <img src="images/player1.png" alt="player1 scoreboard with spade"> -->
+            </div>
+            <div id="player2">
+                <!-- <img src="images/player2.png" alt="player2 scoreboard with heart"> -->
+            </div>
+        </div>
+        <div id="actions"></div>
+    </main>
+</body>
+</html>
