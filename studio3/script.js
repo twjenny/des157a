@@ -13,6 +13,9 @@
 	const game = document.getElementById('game');
 	const score = document.getElementById('score');
 	const actionArea = document.getElementById('actions');
+	// button sound effect
+	const flipSound = new Audio('audio/flip.mp3');
+	
 
 	const gameData = {
 		dice: ['images/1card.png', 'images/2card.png', 'images/3card.png', 
@@ -23,7 +26,7 @@
 		roll2: 0,
 		rollSum: 0,
 		index: 0,
-		gameEnd: 29
+		gameEnd: 29,
 	};
 
 	startGame.addEventListener('click', function () {
@@ -45,9 +48,8 @@
 		game.innerHTML = `<p>Draw cards for ${gameData.players[gameData.index]}</p>`;
 		actionArea.innerHTML = '<button id="roll">| Draw two cards| </button>';
 		document.getElementById('roll').addEventListener('click', function(){
-
+			flipSound.play();
 			throwDice();
-
 		});
 	}
 
@@ -81,10 +83,11 @@
 		// if neither die is a 1...
 		else { 
 			gameData.score[gameData.index] = gameData.score[gameData.index] + gameData.rollSum;
-			actionArea.innerHTML = '<button id="rollagain">| Draw again |</button>            <button id="pass">| Pass |</button>';
+			actionArea.innerHTML = '<button id="rollagain">| Draw again |</button> <button id="pass">| Pass |</button>';
 
 			document.getElementById('rollagain').addEventListener('click', function () {
 				//setUpTurn();
+				flipSound.play();
 				throwDice();
 			});
 
@@ -104,7 +107,7 @@
 			wins with ${gameData.score[gameData.index]} points!</h2>`;
 
 			actionArea.innerHTML = '';
-			document.getElementById('quit').innerHTML = 'Start a New Game?';
+			document.getElementById('quit').innerHTML = '| Start a New Game? |';
 		} else {
 			// show current score...
 			showCurrentScore();

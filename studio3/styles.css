@@ -20,6 +20,7 @@ body {
     font-family: 'IBM Plex Serif', serif;
     color: white;
     line-height: 1.9em;
+    height: 100vh;
 }
 
 button { 
@@ -70,7 +71,7 @@ div#gamecontrol {
     background-color: brown;
     display: flex;
     flex-direction: column;
-    /* text-align: center; */
+    height: 10vh;
 }
 
 button#quit {
@@ -82,11 +83,30 @@ button#quit {
 #game {
     background-color: brown;
     text-align: center;
+    height: 34.5vh;
 }
 
 #game img {
-    width: 10vw;
+    width: 8vw;
     height: auto;
+    animation-name: cardReveal;
+    animation-duration: 1s;
+    position: relative;
+}
+
+@keyframes cardReveal {
+    0% {opacity: 0%;
+        top: 0px;
+    }
+    25% {opacity: 50%;
+        top: 5px;
+    }
+    50% {opacity: 70%;
+        top: 10px;
+    }
+    100% {opacity: 100%;
+        top: 0px;
+    }
 }
 
 #score {
