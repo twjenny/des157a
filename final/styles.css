@@ -1,1 +1,41 @@
+html {
+    background-color: rgb(223, 242, 255);
+}
 
+body {
+    margin: auto;
+    max-width: 70vw;
+    justify-content: center;
+}
+
+h1, h2 {
+    margin: 3% 3% 0 3%;
+}
+
+h1 {
+    font-family: 'Rampart One', cursive;
+}
+
+h2 {
+    font-family: 'Jost', sans-serif;
+}
+
+h3 {
+    font-family: 'Rampart One', cursive;
+    font-size: 25px;
+}
+
+article {
+    padding: 0 4% 0 4%;
+    margin: 3%;
+    border: 2px;
+    border-radius: 10px;
+    border-color:black;
+    border-style: dashed;
+}
+
+p {
+    font-size: 22px;
+    font-family: 'Jost', sans-serif;
+    padding-bottom: 2%;
+}
