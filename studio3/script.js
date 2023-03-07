@@ -34,7 +34,7 @@
 		console.log(gameData.index);
 
 		gameControl.innerHTML = '<h2>The Game Has Started</h2>';
-		gameControl.innerHTML += '<button id="quit">| Wanna Quit? |</button>';
+		gameControl.innerHTML += '<button id="quit"> >> Wanna Quit? << </button>';
 
 		document
 			.getElementById('quit').addEventListener('click', function () {
@@ -107,7 +107,7 @@
 			wins with ${gameData.score[gameData.index]} points!</h2>`;
 
 			actionArea.innerHTML = '';
-			document.getElementById('quit').innerHTML = '| Start a New Game? |';
+			document.getElementById('quit').innerHTML = '>> Start a New Game? <<';
 		} else {
 			// show current score...
 			showCurrentScore();

@@ -1,14 +1,16 @@
 /* introduction part */
+
 header {
-    padding: 15vh 20vh 7vh 20vh;
+    padding: 0 10vh 0 10vh;
     flex-direction: column;
-    height: 80vh;
+    height: 100vh;
     background-color: brown;
     color: white;
 }
 
 header h1 {
     text-align: center;
+    margin-top: 15%;
 }
 
 header p {
@@ -64,7 +66,7 @@ button#startgame {
 
 #begin {
     margin: 5% 40% 5% 40%;
-    width: 16vw;
+    width: 20vw;
 }
 
 div#gamecontrol {
