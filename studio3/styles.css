@@ -21,7 +21,7 @@ body {
     font-family: 'IBM Plex Serif', serif;
     color: white;
     line-height: 1.9em;
-    height: 100vh;
+    height: 100%;
 }
 
 button { 
@@ -84,7 +84,11 @@ button#quit {
 #game {
     background-color: brown;
     text-align: center;
-    height: 34.5vh;
+    height: 32vh;
+}
+
+#game p {
+    margin-top: 0;
 }
 
 #game img {
@@ -111,6 +115,7 @@ button#quit {
 }
 
 #score {
+    margin: 0;
     background-color: brown;
     display: flex;
     flex-direction: row;
@@ -119,6 +124,7 @@ button#quit {
 }
 
 #player1, #player2 {
+    margin: 0;
     flex: 1;
     text-align: center;
 }
@@ -139,14 +145,15 @@ button#quit {
     background-position: center;
 }
 
-
-#actions {
-    padding: 0.6%;
-    background-color: rgb(44, 44, 44);
-    display: flex;
-    justify-content: center;
-    height: 8vh;
-}
+#actions { 
+    position:fixed; 
+    bottom:0; 
+    width:100vw; 
+    padding: 0.6%; 
+    background-color: rgb(44, 44, 44); 
+    display: flex; 
+    justify-content: center; 
+    height: 8vh; }
 
 #rollagain, #pass {
     width: 25vw;
