@@ -1,0 +1,96 @@
+body, html {
+    height: 100%;
+ }
+
+.sister {
+    height: 462px;
+    width: 517px;
+    position: absolute;
+    margin-left: 700px;
+    z-index: 1;
+}
+
+.grandma {
+    background-image: url(images/grandma.png);
+    height: 422px;
+    width: 314px;
+    position: absolute;
+    margin-left: 600px;
+    z-index: 1;
+    
+}
+
+.colorguard {
+    background-image: url(images/colorguard.png);
+    height: 415px;
+    width: 221px;
+    position: absolute;
+    margin-left: 600px;
+    z-index: 1;
+    
+}
+
+.bf {
+    background-image: url(images/bf.png);
+    height: 422px;
+    width: 314px;
+    position: absolute;
+    margin-left: 500px;
+    z-index: 1;
+    
+}
+
+.mom {
+    background-image: url(images/mom.png);
+    height: 422px;
+    width: 314px;
+    position: absolute;
+    margin-left: 300px;
+    z-index: 1;
+}
+
+.bg1 {
+    background-image: url(images/bg1.png);
+    height: 100%;
+    background-attachment: fixed;
+    position: relative;
+    background-size: cover;
+    
+}
+
+.bg2 {
+    background-image: url(images/bg2.png);
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.bg3 {
+    background-image: url(images/bg3.png);
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg4 {
+    background-image: url(images/bg4.png);
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg5 {
+    background-image: url(images/bg5.png);
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
