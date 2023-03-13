@@ -4,6 +4,8 @@ body, html {
     scroll-behavior: smooth;
 }
 
+/* landing page css */
+
 header {
     height: 100vh;
     text-align: center;
@@ -16,7 +18,7 @@ header {
 }
 
 header h1 {
-    padding-top:20vh;
+    padding-top: 20vh;
     margin: 0;
     color: white;
 }
@@ -66,12 +68,15 @@ body {
     font-size: 20px;
 }
 
+/* content css */
+
 #sister, #grandma, #colorguard, #bf, #mom {
     position: absolute;
     z-index: 1;
 }
 
 #sister {
+    margin: 5% 0 0 5%;
     height: 462px;
     width: 517px;
     left: 10px;
@@ -86,15 +91,15 @@ body {
 }
 
 img.sisterLetter {
-    width: 35vw;
+    width: 30vw;
 }
 
 #grandma {
+    margin: 7% 0 0 7%;
     background-image: url(images/grandma.png);
-    height: 422px;
-    width: 314px;
+    height: 370px;
+    width: 330px;
     left: 600px;
-    
 }
 
 #grandmaArticle {
@@ -107,10 +112,11 @@ img.sisterLetter {
 }
 
 img.grandmaLetter {
-    width: 47vw;
+    width: 35vw;
 }
 
 #colorguard {
+    margin: 4% 0 0 3%;
     background-image: url(images/colorguard.png);
     height: 415px;
     width: 221px;
@@ -128,15 +134,15 @@ img.grandmaLetter {
 }
 
 img.colorguardLetter {
-    width: 40vw;
+    width: 37vw;
 }
 
 #bf {
+    margin: 4% 0 0 3%;
     background-image: url(images/bf.png);
-    height: 422px;
+    height: 300px;
     width: 314px;
     left: 600px;
-    
 }
 
 #bfArticle {
@@ -149,10 +155,11 @@ img.colorguardLetter {
 }
 
 img.bfLetter {
-    width: 50vw;
+    width: 40vw;
 }
 
 #mom {
+    margin: 4% 0 0 7%;
     background-image: url(images/mom.png);
     height: 422px;
     width: 314px;
@@ -169,7 +176,7 @@ img.bfLetter {
 }
 
 img.momLetter {
-    width: 40vw;
+    width: 30vw;
 }
 
 .bg1 {
@@ -216,4 +223,4 @@ footer {
     position:fixed; 
     bottom:0; 
     width:95vw; 
-}
+} 
