@@ -1,11 +1,8 @@
-html {
-    background-color: rgb(223, 242, 255);
-}
-
 body {
     margin: auto;
     max-width: 70vw;
     justify-content: center;
+    background-color: rgb(223, 242, 255);
 }
 
 h1, h2 {
@@ -34,8 +31,34 @@ article {
     border-style: dashed;
 }
 
-p {
+p, li {
     font-size: 22px;
     font-family: 'Jost', sans-serif;
     padding-bottom: 2%;
+}
+
+li {
+    padding: 0;
+}
+
+img {
+    margin: auto;
+    padding-bottom: 2%;
+    display: block;
+}
+
+#result {
+    background-color: rgb(255, 224, 224);
+}
+
+#conclusion {
+    border: 2px;
+    border-radius: 10px;
+    border-color:black;
+    border-style:solid;
+    background-color: rgb(255, 248, 239);
+}
+
+article#conclusion {
+    padding: 0 2.3% 2.3% 2.3%;
 }
