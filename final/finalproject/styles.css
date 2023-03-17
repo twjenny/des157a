@@ -4,8 +4,7 @@ body, html {
     scroll-behavior: smooth;
 }
 
-/* landing page css */
-
+/* landing page --------------------------------------------------------------------*/
 header {
     height: 100vh;
     text-align: center;
@@ -55,7 +54,16 @@ button {
 #scrollBtn button {
     margin-top: 43vh;
     background-color: gray;
+    /* animation: bounce 0.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite; */
 }
+
+/* 
+@keyframes bounce {
+    from {transform: translate3d(0, 0, 0)};
+    to {transform: translate3d(0, 50px, 0)};
+} */
 
 #topBtn button {
     margin: 1%;
@@ -64,16 +72,24 @@ button {
 }
 
 body {
-    font-family: 'Darker Grotesque', sans-serif;
+    font-family: 'Handlee', cursive;
     font-size: 20px;
 }
 
-/* content css */
+/* commom in contents ------------------------------------------------------------------*/
 #sister, #grandma, #colorguard, #bf, #mom {
     position: absolute;
     z-index: 1;
 }
 
+#sisterArticle, #grandmaArticle, #colorguardArticle, #bfArticle, #momArticle {
+    color: rgb(29, 29, 29);
+    max-width: 40vw;
+    height: auto;
+    background-color: rgb(244, 233, 215);
+}
+
+/* sister -----------------------------------------------------------------------------*/
 #sister {
     height: 462px;
     width: 517px;
@@ -83,9 +99,6 @@ body {
 #sisterArticle {
     margin-left: 50%;
     padding: 3%;
-    color: white;
-    max-width: 40vw;
-    background-color: rgb(52, 52, 52);
 }
 
 img.sisterLetter {
@@ -93,49 +106,44 @@ img.sisterLetter {
     width: 30vw;
 }
 
+/* grandma ---------------------------------------------------------------------------*/
 #grandma {
-    margin: 7% 0 0 7%;
+    margin: 4% 0 0 5%;
     background-image: url(images/grandma.png);
-    height: 200px;
-    width: 200px;
-    left: 50%;
+    height: 415px;
+    width: 221px;
+    left: 10px;
 }
 
 #grandmaArticle {
-    margin-left: 4%;
+    margin-left: 50%;
     padding: 3%;
-    color: white;
-    max-width: 40vw;
-    height: auto;
-    background-color: rgb(52, 52, 52);
 }
 
 img.grandmaLetter {
     width: 35vw;
 }
 
+/* colorguard -------------------------------------------------------------------------*/
 #colorguard {
-    margin: 4% 0 0 3%;
+    margin: 7% 0 0 7%;    
     background-image: url(images/colorguard.png);
-    height: 415px;
-    width: 221px;
-    left: 10px;
+    height: 200px;
+    width: 200px;
+    left: 50%;
     
 }
 
 #colorguardArticle {
-    margin-left: 50%;
+    margin-left: 4%;
     padding: 3%;
-    color: white;
-    max-width: 40vw;
-    height: auto;
-    background-color:rgb(52, 52, 52);
 }
 
 img.colorguardLetter {
     width: 37vw;
 }
 
+/* bf -----------------------------------------------------------------------------------*/
 #bf {
     margin: 4% 0 0 3%;
     background-image: url(images/bf.png);
@@ -147,16 +155,13 @@ img.colorguardLetter {
 #bfArticle {
     margin-left: 4%;
     padding: 3%;
-    color: white;
-    max-width: 40vw;
-    height: auto;
-    background-color: rgb(52, 52, 52);
 }
 
 img.bfLetter {
     width: 40vw;
 }
 
+/* mom -----------------------------------------------------------------------------------*/
 #mom {
     margin: 4% 0 0 7%;
     background-image: url(images/mom.png);
@@ -168,14 +173,20 @@ img.bfLetter {
 #momArticle {
     margin-left: 50%;
     padding: 3%;
-    color: white;
-    max-width: 40vw;
-    height: auto;
-    background-color: rgb(52, 52, 52);
 }
 
 img.momLetter {
     width: 30vw;
+}
+
+/* background --------------------------------------------------------------------------- */
+.bg1, .bg2, .bg3, .bg4, .bg5 {
+    height: 100%;
+    display: flex;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .bg1 {
@@ -198,15 +209,7 @@ img.momLetter {
     background-image: url(images/bg5.png);
 }
 
-.bg1, .bg2, .bg3, .bg4, .bg5 {
-    height: 100%;
-    display: flex;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
+/* footer */
 footer {
     padding: 2%;
     padding-right: 5%;
