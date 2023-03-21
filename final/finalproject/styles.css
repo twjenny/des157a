@@ -16,24 +16,29 @@ header {
     background-position-y: bottom;
 }
 
-header h1 {
-    padding-top: 20vh;
+h1#title {
+    padding: 20vh 0 40vh 0;
     margin: 0;
     color: white;
 }
 
-button {
+#topBtn, #scrollBtn {
     padding: 0.5em;
     text-align: center;
-    color: white;
+    font-family: 'Julius Sans One', sans-serif;
     font-size: 25px;
     border:none;
     border:3px solid transparent;
     border-radius: 30px;
-    font-family: 'Julius Sans One', sans-serif;
+    background-color: gray;
 }
 
-#scrollBtn button:hover{
+a#scrollBtn {
+    text-decoration: none;
+    color: white;
+}
+
+#scrollBtn:hover{
     cursor: pointer;
     border-style: solid;
     border-width: 3px;
@@ -42,7 +47,18 @@ button {
     border-radius: 30px;
 }
 
-#topBtn button:hover {
+#topBtn {
+    margin: 1%;
+    background-color: rgb(238, 202, 72);
+    color:black;
+}
+
+a#topBtn {
+    color:black;
+    text-decoration: none;
+}
+
+#topBtn:hover {
     cursor: pointer;
     border-style: solid;
     border-width: 3px;
@@ -51,29 +67,42 @@ button {
     border-radius: 30px;
 }
 
-#scrollBtn button {
-    margin-top: 43vh;
-    background-color: gray;
-    /* animation: bounce 0.5s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite; */
-}
-
-/* 
-@keyframes bounce {
-    from {transform: translate3d(0, 0, 0)};
-    to {transform: translate3d(0, 50px, 0)};
-} */
-
-#topBtn button {
-    margin: 1%;
-    background-color: rgb(238, 202, 72);
-    color:black;
-}
-
 body {
     font-family: 'Handlee', cursive;
     font-size: 20px;
+}
+
+ul#breadcrumb {
+    margin: 0;
+    padding: 15px 16px;
+    text-align: center;
+    list-style: none;
+    background-color: #eee;
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+}
+
+ul#breadcrumb li {
+    display: inline;
+    font-size: 20px;
+}
+
+ul#breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "ㅡ";
+}
+
+ul#breadcrumb li a {
+    color: black;
+    font-family: 'Julius Sans One', sans-serif;
+    text-decoration: none;
+}
+
+ul#breadcrumb li a:hover {
+    color: #ff9294;
+    text-decoration: none;
 }
 
 /* commom in contents ------------------------------------------------------------------*/
@@ -84,9 +113,13 @@ body {
 
 #sisterArticle, #grandmaArticle, #colorguardArticle, #bfArticle, #momArticle {
     color: rgb(29, 29, 29);
-    max-width: 40vw;
-    height: auto;
+    max-width: 30vw;
+    height: 100vh;
     background-color: rgb(244, 233, 215);
+}
+
+h1 {
+    padding-top: 10%;
 }
 
 /* sister -----------------------------------------------------------------------------*/
@@ -97,7 +130,7 @@ body {
 }
 
 #sisterArticle {
-    margin-left: 50%;
+    margin-left: 60%;
     padding: 3%;
 }
 
@@ -108,25 +141,25 @@ img.sisterLetter {
 
 /* grandma ---------------------------------------------------------------------------*/
 #grandma {
-    margin: 4% 0 0 5%;
     background-image: url(images/grandma.png);
-    height: 415px;
-    width: 221px;
-    left: 10px;
+    height: 0;
+    width: auto;
+    left: 50px;
 }
 
 #grandmaArticle {
-    margin-left: 50%;
+    margin-left: 60%;
     padding: 3%;
 }
 
 img.grandmaLetter {
+    padding: 10% 0 0 10%;
     width: 35vw;
 }
 
 /* colorguard -------------------------------------------------------------------------*/
 #colorguard {
-    margin: 7% 0 0 7%;    
+    margin: 5% 0 0 7%;    
     background-image: url(images/colorguard.png);
     height: 200px;
     width: 200px;
@@ -136,7 +169,7 @@ img.grandmaLetter {
 
 #colorguardArticle {
     margin-left: 4%;
-    padding: 3%;
+    padding: 5% 3% 3% 3%;
 }
 
 img.colorguardLetter {
@@ -171,11 +204,13 @@ img.bfLetter {
 }
 
 #momArticle {
-    margin-left: 50%;
+    margin-left: 60%;
     padding: 3%;
+    height: 90vh;
 }
 
 img.momLetter {
+    margin: 4% 0 0 7%;
     width: 30vw;
 }
 
@@ -218,12 +253,5 @@ footer {
     position:fixed; 
     bottom:0; 
     width:95vw; 
+    z-index: 10;
 } 
-/* 
-.dark {
-    filter: brightness(50%);
-}
-
-.bright {
-    filter: brightness(100%);
-} */
